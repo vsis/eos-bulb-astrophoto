@@ -23,7 +23,7 @@ print_error_msg() {
 
 start_shooting() {
   for SHOOT_COUNT in `seq 1 $SHOOT_NUMBER`; do
-    gphoto2     --filename "shoot_${SHOOT_NAME}_${SHOOT_COUNT}.CR2" \
+    gphoto2     --filename "${SHOOT_NAME}_${SHOOT_COUNT}.CR2" \
       --wait-event=2s \
       --set-config eosremoterelease=5 \
       --wait-event=${SHOOT_TIME}s \
